@@ -45,3 +45,5 @@ Statistics.propTypes = {
   positivePercentage: propTypes.number,
 };
 export default Statistics;
+// countTotalFeedback();
+// countPositiveFeedbackPercentage();
