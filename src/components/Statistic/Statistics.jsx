@@ -6,6 +6,7 @@ class Statistics extends React.Component {
       good: 0,
       neutral: 0,
       bad: 0,
+      positivePercentage: 0,
     };
     return (
       <>
@@ -29,9 +30,18 @@ class Statistics extends React.Component {
         <h3>
           Neutral: <span>{neutral}</span>
         </h3>
+        <h3>
+          Positive Feedback: <span>{positivePercentage}%</span>
+        </h3>
       </>
     );
   }
 }
-
+Statistics.propTypes = {
+  good: propTypes.number,
+  bad: propTypes.number,
+  neutral: propTypes.number,
+  total: propTypes.number,
+  positivePercentage: propTypes.number,
+};
 export default Statistics;
